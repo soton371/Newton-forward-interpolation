@@ -25,7 +25,7 @@ int main()
         scanf("%f",&diff[i][1]);
     }
     for(j=2;j<=n;j++)
-    for(i=0;i<n;i++)
+    for(i=0;i<n-1;i++)
     diff[i][j]=diff[i+1][j-1] - diff[i][j-1];
     printf("\nenter the value of x:\n");
     scanf("%f",&x);
